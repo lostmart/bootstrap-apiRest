@@ -5,6 +5,13 @@ const form = document.querySelector("[data-form]")
 const API_KEY = import.meta.env.VITE_RAPID_KEY
 const VITE_RAPID_HOST = import.meta.env.VITE_RAPID_HOST
 
+console.log(API_KEY)
+
+// check API key
+if (!API_KEY) {
+	alert("you don't have an API key !! ")
+}
+
 const dummy_data = [
 	{
 		appId: "1672970",
