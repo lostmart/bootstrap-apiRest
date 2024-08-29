@@ -66,7 +66,7 @@ const showData = (dummy_data) => {
                     </p>
                     <a href="${game.url}" target="_blank" class="btn btn-primary">
 						View on Steam
-						<img src="/assets/steam.svg" alt="steam icon" />	
+						<img src="/steam.svg" alt="steam icon" />	
 					</a>
                 </div>
             </article>
