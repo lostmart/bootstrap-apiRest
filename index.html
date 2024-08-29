@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<style>
+			.alert {
+				max-width: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="p-4">
+			<h1>Look up your favorite game in Steam!</h1>
+			<form class="row row-cols-lg-auto g-3 align-items-center mt-2" data-form>
+				<div class="col">
+					<input
+						type="text"
+						class="form-control"
+						id="test"
+						aria-describedby="emailHelp"
+						placeholder="Type your game here !"
+						autocomplete="off"
+					/>
+				</div>
+				<div class="col">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</header>
+		<main>
+			<!--  loading state  -->
+			<div class="spinner-container d-none">
+				<div class="d-flex justify-content-center m-5">
+					<div class="spinner-border" role="status">
+						<span class="visually-hidden">Loading...</span>
+					</div>
+				</div>
+			</div>
+
+			<!---  nothing found    -->
+			<div class="alert alert-warning m-auto d-none" role="alert">
+				No results found with this name...
+			</div>
+			<div class="container">
+				<h2 class="d-none">Here's the result for your search ... ✨</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 dynamic_data"
+				>
+					<!-- 
+           - -- -  dynamic content      -  --   -
+
+          <article class="card col">
+						<img src="..." class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</article> -->
+				</div>
+			</div>
+		</main>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
